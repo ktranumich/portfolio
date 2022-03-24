@@ -10,13 +10,25 @@ h1{
 	font-family: "Roboto";
 }
 
+.skip{
+	left: -100%;
+	position: absolute;
+	transform: translateY(-100%);
+}
+
+.skip:focus {
+	left: 50%;
+	position: absolute;
+	transform: translateY(0%);
+  }
+
 .active a{
 	color: purple;
 }
 
 img{
-    height: 200px;
-    width: auto;
+    height: 100px;
+    width: 100px;
     padding: 15px;
     margin: 10px;
 }
@@ -73,11 +85,15 @@ a:hover{
 .canfield_consortium{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
+	border-bottom-style: solid;
+	border-width: 1px;
 }
 
 .google_assistant{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
+		border-bottom-style: solid;
+		border-width: 1px;
 }
 
 .maize_blue{
@@ -91,7 +107,7 @@ a:hover{
 
 footer{
 	border-top-style: solid;
-	border-width: 2px;
+	border-width: 1px;
 	line-height: 0.2;
 }
 
@@ -126,3 +142,5 @@ h1{
 		animation: none;
 	}
 }
+
+
